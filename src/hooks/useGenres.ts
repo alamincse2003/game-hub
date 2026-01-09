@@ -7,7 +7,8 @@ const apiClient = new APIClient<Genre>("/genres");
 export interface Genre {
   id: number;
   name: string;
-  image_background: string;
+  slug: string;
+  background_image: string;
 }
 
 const useGenres = () =>
