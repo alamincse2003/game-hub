@@ -19,7 +19,6 @@ const GenreList = ({ selectedGenre, onSelectGenre }: Props) => {
   const { data, isLoading, error } = useGenres();
 
   if (error) return null;
-
   if (isLoading) return <Spinner />;
 
   return (
